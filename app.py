@@ -22,8 +22,7 @@ luas rumah, jumlah kamar tidur, dan jumlah kamar mandi.
 col1, col2 = st.columns(2)
 
 with col1:
-    sqft_living = st.number_input("Jumlah Kamar Mandi", min_value=1.0, max_value=8.0, step=0.25, value=2.0
-)
+    sqft_living = st.number_input("Jumlah Kamar Mandi", min_value=1, max_value=8, step=1, value=2)
 with col2:
     bedrooms = st.number_input("Jumlah Kamar Tidur", min_value=1, max_value=10, step=1, value=3)
 
